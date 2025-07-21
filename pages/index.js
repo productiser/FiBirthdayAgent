@@ -83,8 +83,9 @@ export default function AIChatApp() {
 
 		// Configuration
 		const CHAT_CONFIG = {
-			iframeUrl: "https://n8n.pankstr.com/webhook/fifi-chat",
-			fallbackUrl: "https://n8n.pankstr.com/webhook-test/fifi-chat",
+			/** CHANGE iFRAME URL and FALL BACK TEST URL */
+			iframeUrl: "https://your-domain-name.com/webhook/fifi-chat",
+			fallbackUrl: "https://your-domain-name.com/webhook-test/fifi-chat",
 			loadTimeout: 10000,
 			localTesting: false,
 		};
@@ -451,7 +452,13 @@ export default function AIChatApp() {
 
 			<div className="container">
 				<h1 id="main-title">🤖 AI Chat Assistant</h1>
-				<p style={{ color: "rgba(255, 255, 255, 0.8)", marginBottom: "2rem", textAlign: "center" }}>
+				<p
+					style={{
+						color: "rgba(255, 255, 255, 0.8)",
+						marginBottom: "2rem",
+						textAlign: "center",
+					}}
+				>
 					Your intelligent chat companion is ready to help!
 				</p>
 			</div>
@@ -505,17 +512,13 @@ export default function AIChatApp() {
 							</button>
 							<button
 								className="quick-tag"
-								onClick={() =>
-									window.sendQuickMessage?.("Tell me a fun fact!")
-								}
+								onClick={() => window.sendQuickMessage?.("Tell me a fun fact!")}
 							>
 								📚 Fun Fact
 							</button>
 							<button
 								className="quick-tag"
-								onClick={() =>
-									window.sendQuickMessage?.("Tell me a joke!")
-								}
+								onClick={() => window.sendQuickMessage?.("Tell me a joke!")}
 							>
 								😂 Tell Joke
 							</button>
