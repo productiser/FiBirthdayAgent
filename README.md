@@ -46,8 +46,8 @@ The default access code is `AICHAT2025` (case insensitive).
 
 ### Chat Configuration
 The AI chat is configured to connect to:
-- Primary endpoint: `https://n8n.pankstr.com/webhook/fifi-chat`
-- Fallback endpoint: `https://n8n.pankstr.com/webhook-test/fifi-chat`
+- Primary endpoint: `https://your-n8n-domain-dot.com/webhook/fifi-chat`
+- Fallback endpoint: `https:///your-n8n-domain-dot.com/webhook-test/fifi-chat`
 
 ### Features Removed
 This minified version removes the following from the original app:
